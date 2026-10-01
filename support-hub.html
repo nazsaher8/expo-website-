@@ -1,0 +1,2070 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Support Hub | HerShield</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+
+    <style>
+
+        /* =========================================
+           SUPPORT HUB
+        ========================================== */
+
+        .support-hero {
+
+            min-height: 560px;
+
+            padding: 80px 8%;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 60px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(93,143,235,.20),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 15% 80%,
+                    rgba(154,121,226,.20),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #faf8ff,
+                    #edf6ff
+                );
+
+            overflow: hidden;
+        }
+
+
+        .support-content {
+
+            width: 55%;
+
+        }
+
+
+        .support-badge {
+
+            display: inline-block;
+
+            padding: 10px 19px;
+
+            background: #e9e2ff;
+
+            color: #604ba4;
+
+            border-radius: 30px;
+
+            font-weight: 800;
+
+        }
+
+
+        .support-content h1 {
+
+            margin-top: 22px;
+
+            font-size: 54px;
+
+            line-height: 1.08;
+
+            color: #263d73;
+
+        }
+
+
+        .support-content h1 span {
+
+            color: #7b61d2;
+
+        }
+
+
+        .support-content p {
+
+            margin-top: 20px;
+
+            max-width: 650px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #606d84;
+
+        }
+
+
+        .support-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 30px;
+
+        }
+
+
+        .support-button {
+
+            padding: 14px 26px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            transition: .3s;
+
+        }
+
+
+        .support-primary {
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #617ddd,
+                    #8064d8
+                );
+
+            box-shadow:
+                0 12px 28px
+                rgba(88,94,180,.22);
+
+        }
+
+
+        .support-secondary {
+
+            background: white;
+
+            color: #53659b;
+
+            border: 1px solid #dce2f3;
+
+        }
+
+
+        .support-button:hover {
+
+            transform: translateY(-4px);
+
+        }
+
+
+        /* =========================================
+           SUPPORT DASHBOARD
+        ========================================== */
+
+        .support-visual {
+
+            width: 45%;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+        .support-dashboard {
+
+            width: 370px;
+
+            padding: 25px;
+
+            border-radius: 30px;
+
+            background:
+                rgba(255,255,255,.82);
+
+            border:
+                1px solid #e0e5f2;
+
+            box-shadow:
+                0 30px 70px
+                rgba(54,72,130,.16);
+
+            backdrop-filter: blur(10px);
+
+        }
+
+
+        .dashboard-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding-bottom: 18px;
+
+            border-bottom:
+                1px solid #e7eaf3;
+
+        }
+
+
+        .dashboard-header h3 {
+
+            color: #344b82;
+
+        }
+
+
+        .online-status {
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            color: #558b76;
+
+        }
+
+
+        .support-icon-large {
+
+            width: 130px;
+
+            height: 130px;
+
+            margin: 35px auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    #ffffff 35%,
+                    #e9e2ff 36%,
+                    #dce9ff 70%
+                );
+
+            box-shadow:
+                0 0 0 12px
+                rgba(128,100,216,.07),
+
+                0 0 45px
+                rgba(93,124,220,.20);
+
+            font-size: 58px;
+
+        }
+
+
+        .dashboard-option {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 13px;
+
+            margin: 10px 0;
+
+            border-radius: 13px;
+
+            background: #f7f8fd;
+
+            color: #52617c;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =========================================
+           INTRO
+        ========================================== */
+
+        .support-intro {
+
+            padding: 85px 8%;
+
+            text-align: center;
+
+        }
+
+
+        .support-intro h2 {
+
+            font-size: 38px;
+
+            color: #293f76;
+
+        }
+
+
+        .support-intro p {
+
+            max-width: 760px;
+
+            margin: 15px auto;
+
+            color: #68758c;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =========================================
+           HELP CARDS
+        ========================================== */
+
+        .help-section {
+
+            padding: 25px 8% 90px;
+
+            background: #f8f9ff;
+
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-size: 37px;
+
+            color: #293f76;
+
+        }
+
+
+        .section-title p {
+
+            margin-top: 10px;
+
+            color: #6d7890;
+
+        }
+
+
+        .help-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 23px;
+
+        }
+
+
+        .help-card {
+
+            padding: 30px;
+
+            background: white;
+
+            border-radius: 22px;
+
+            border:
+                1px solid #e7eaf4;
+
+            box-shadow:
+                0 12px 30px
+                rgba(55,75,130,.07);
+
+            transition: .3s;
+
+        }
+
+
+        .help-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 20px 40px
+                rgba(55,75,130,.13);
+
+        }
+
+
+        .help-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eee8ff,
+                    #e5f0ff
+                );
+
+            border-radius: 18px;
+
+            font-size: 30px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .help-card h3 {
+
+            color: #30477c;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .help-card p {
+
+            color: #6b778e;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+        }
+
+
+        .help-card a {
+
+            display: inline-block;
+
+            margin-top: 18px;
+
+            color: #705dca;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================================
+           SUPPORT SELECTOR
+        ========================================== */
+
+        .selector-section {
+
+            padding: 90px 8%;
+
+        }
+
+
+        .selector-box {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 45px;
+
+            border-radius: 30px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #f3efff,
+                    #eaf4ff
+                );
+
+            box-shadow:
+                0 20px 55px
+                rgba(56,74,130,.12);
+
+            border:
+                1px solid #e2e6f2;
+
+        }
+
+
+        .selector-box h2 {
+
+            text-align: center;
+
+            color: #293f76;
+
+            font-size: 34px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .selector-box > p {
+
+            text-align: center;
+
+            color: #707b91;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .selector-options {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+        }
+
+
+        .selector-option {
+
+            padding: 18px;
+
+            background: white;
+
+            border:
+                2px solid transparent;
+
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            color: #53627d;
+
+            font-weight: 700;
+
+            transition: .3s;
+
+        }
+
+
+        .selector-option:hover {
+
+            border-color: #a999e4;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        .selector-option.selected {
+
+            border-color: #8064d8;
+
+            background: #f3efff;
+
+        }
+
+
+        .selector-result {
+
+            display: none;
+
+            margin-top: 25px;
+
+            padding: 25px;
+
+            background: white;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+        }
+
+
+        .selector-result.show {
+
+            display: block;
+
+        }
+
+
+        .selector-result h3 {
+
+            color: #344b82;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .selector-result p {
+
+            color: #707b91;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================================
+           EVIDENCE SECTION
+        ========================================== */
+
+        .evidence-section {
+
+            padding: 90px 8%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7f3ff,
+                    #eef7ff
+                );
+
+        }
+
+
+        .evidence-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 23px;
+
+            max-width: 1050px;
+
+            margin: auto;
+
+        }
+
+
+        .evidence-card {
+
+            padding: 28px;
+
+            background:
+                rgba(255,255,255,.88);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 28px
+                rgba(55,75,130,.07);
+
+        }
+
+
+        .evidence-card span {
+
+            font-size: 35px;
+
+        }
+
+
+        .evidence-card h3 {
+
+            color: #344a7d;
+
+            margin: 15px 0 10px;
+
+        }
+
+
+        .evidence-card p {
+
+            color: #707b91;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =========================================
+           EMERGENCY AREA
+        ========================================== */
+
+        .emergency-section {
+
+            padding: 90px 8%;
+
+        }
+
+
+        .emergency-box {
+
+            max-width: 1050px;
+
+            margin: auto;
+
+            padding: 45px;
+
+            border-radius: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef5ff,
+                    #f4efff
+                );
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+
+            box-shadow:
+                0 20px 50px
+                rgba(57,75,130,.11);
+
+        }
+
+
+        .emergency-box h2 {
+
+            color: #293f76;
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .emergency-box p {
+
+            color: #69758c;
+
+            line-height: 1.8;
+
+        }
+
+
+        .emergency-notice {
+
+            padding: 25px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            border-left:
+                5px solid #8064d8;
+
+        }
+
+
+        .emergency-notice h3 {
+
+            color: #344a7d;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .emergency-notice p {
+
+            font-size: 13px;
+
+        }
+
+
+        /* =========================================
+           CTA
+        ========================================== */
+
+        .support-cta {
+
+            padding: 30px 8% 90px;
+
+        }
+
+
+        .support-cta-box {
+
+            padding: 65px 30px;
+
+            text-align: center;
+
+            color: white;
+
+            border-radius: 32px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #596fc4,
+                    #8064d8
+                );
+
+            box-shadow:
+                0 25px 55px
+                rgba(72,82,160,.23);
+
+        }
+
+
+        .support-cta-box h2 {
+
+            font-size: 38px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .support-cta-box p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            line-height: 1.8;
+
+            opacity: .93;
+
+        }
+
+
+        .support-cta-button {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 14px 28px;
+
+            background: white;
+
+            color: #596bb3;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: 900;
+
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================== */
+
+        @media(max-width: 950px) {
+
+            .support-hero {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+
+            .support-content,
+            .support-visual {
+
+                width: 100%;
+
+            }
+
+
+            .support-buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .help-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+
+            .evidence-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+
+            .emergency-box {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media(max-width: 650px) {
+
+            .support-content h1 {
+
+                font-size: 38px;
+
+            }
+
+
+            .support-dashboard {
+
+                width: 100%;
+
+                max-width: 360px;
+
+            }
+
+
+            .help-grid,
+            .evidence-grid,
+            .selector-options {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .selector-box,
+            .emergency-box {
+
+                padding: 28px;
+
+            }
+
+
+            .support-intro h2,
+            .section-title h2 {
+
+                font-size: 30px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================== -->
+
+ <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🛡️</span>
+            <span>Her<span>Shield</span></span>
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="index.html" class="active">Home</a>
+
+            <div class="dropdown">
+                <a href="#hubs">Hubs ▾</a>
+
+                <div class="dropdown-menu">
+                    <a href="campus-hub.html">Campus Hub</a>
+                    <a href="workplace-hub.html">Workplace Hub</a>
+                    <a href="public-space-hub.html">Public Space Hub</a>
+                    <a href="digital-safety-hub.html">Digital Safety Hub</a>
+                    <a href="home-safety-hub.html">Home Safety Hub</a>
+                    <a href="support-hub.html">Support Hub</a>
+                    <a href="legal-help-hub.html">Legal Help Hub</a>
+                </div>
+            </div>
+
+            <a href="#about">About</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="em" class="emergency-btn">Emergency</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+    </header>
+
+
+<!-- =========================================
+     HERO
+========================================== -->
+
+<section class="support-hero">
+
+
+    <div class="support-content">
+
+
+        <span class="support-badge">
+
+            🤝 HerShield Support Hub
+
+        </span>
+
+
+        <h1>
+
+            You Are Not
+            <span>Alone.</span>
+
+        </h1>
+
+
+        <p>
+
+            Finding the right support can feel difficult.
+            HerShield brings together practical guidance to
+            help you identify trusted people, understand
+            reporting options and find appropriate sources
+            of assistance.
+
+        </p>
+
+
+        <div class="support-buttons">
+
+
+            <a href="#help-options"
+               class="support-button support-primary">
+
+                Find Support →
+
+            </a>
+
+
+            <a href="#support-selector"
+               class="support-button support-secondary">
+
+                What Do I Need?
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SUPPORT DASHBOARD -->
+
+    <div class="support-visual">
+
+
+        <div class="support-dashboard">
+
+
+            <div class="dashboard-header">
+
+                <h3>
+
+                    Support Center
+
+                </h3>
+
+
+                <span class="online-status">
+
+                    ● Available
+
+                </span>
+
+            </div>
+
+
+            <div class="support-icon-large">
+
+                🤝
+
+            </div>
+
+
+            <div class="dashboard-option">
+
+                👥 Trusted Person
+
+            </div>
+
+
+            <div class="dashboard-option">
+
+                📋 Reporting Guidance
+
+            </div>
+
+
+            <div class="dashboard-option">
+
+                ⚖️ Legal Information
+
+            </div>
+
+
+            <div class="dashboard-option">
+
+                🆘 Immediate Help
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INTRO
+========================================== -->
+
+<section class="support-intro">
+
+
+    <h2>
+
+        Support Can Take Different Forms
+
+    </h2>
+
+
+    <p>
+
+        Depending on the situation, support might come from
+        someone you trust, an educational institution,
+        workplace representative, platform reporting tools,
+        a professional support service or an appropriate
+        authority. Choose the option that fits your situation.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     HELP OPTIONS
+========================================== -->
+
+<section class="help-section"
+         id="help-options">
+
+
+    <div class="section-title">
+
+        <h2>
+
+            How Can We Help?
+
+        </h2>
+
+
+        <p>
+
+            Explore the type of support you may need.
+
+        </p>
+
+    </div>
+
+
+    <div class="help-grid">
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                👥
+
+            </div>
+
+
+            <h3>
+
+                Trusted People
+
+            </h3>
+
+
+            <p>
+
+                Consider talking to a trusted friend, family
+                member, teacher, counselor, colleague or another
+                person who can listen and support you.
+
+            </p>
+
+
+            <a href="#trusted">
+
+                Learn More →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                📋
+
+            </div>
+
+
+            <h3>
+
+                Reporting Guidance
+
+            </h3>
+
+
+            <p>
+
+                Learn about documenting concerns and using the
+                reporting or complaint procedures available
+                through the relevant organization or platform.
+
+            </p>
+
+
+            <a href="#reporting">
+
+                Reporting Options →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                💙
+
+            </div>
+
+
+            <h3>
+
+                Emotional Support
+
+            </h3>
+
+
+            <p>
+
+                Talking to someone supportive can help you feel
+                heard and can make it easier to decide what
+                steps you want to take.
+
+            </p>
+
+
+            <a href="#trusted">
+
+                Explore Support →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                ⚖️
+
+            </div>
+
+
+            <h3>
+
+                Legal Information
+
+            </h3>
+
+
+            <p>
+
+                When appropriate, seek information from a
+                qualified legal professional or relevant
+                official authority about your options.
+
+            </p>
+
+
+            <a href="legal-help-hub.html">
+
+                Legal Help →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                📱
+
+            </div>
+
+
+            <h3>
+
+                Digital Support
+
+            </h3>
+
+
+            <p>
+
+                For online harassment, review platform tools
+                such as blocking, reporting and privacy settings.
+
+            </p>
+
+
+            <a href="digital-safety-hub.html">
+
+                Digital Safety →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+
+                🆘
+
+            </div>
+
+
+            <h3>
+
+                Immediate Help
+
+            </h3>
+
+
+            <p>
+
+                If you are in immediate danger, move toward a
+                safer location when possible and contact an
+                appropriate local emergency service or trusted
+                person.
+
+            </p>
+
+
+            <a href="#emergency">
+
+                Safety Options →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SUPPORT SELECTOR
+========================================== -->
+
+<section class="selector-section"
+         id="support-selector">
+
+
+    <div class="selector-box">
+
+
+        <h2>
+
+            What Kind of Support Do You Need?
+
+        </h2>
+
+
+        <p>
+
+            Select one option to see a suggested next step.
+
+        </p>
+
+
+        <div class="selector-options">
+
+
+            <div class="selector-option"
+                 data-result="trusted">
+
+                👥 I want someone to talk to
+
+            </div>
+
+
+            <div class="selector-option"
+                 data-result="digital">
+
+                📱 I am facing online harassment
+
+            </div>
+
+
+            <div class="selector-option"
+                 data-result="report">
+
+                📋 I want to report something
+
+            </div>
+
+
+            <div class="selector-option"
+                 data-result="legal">
+
+                ⚖️ I need legal information
+
+            </div>
+
+
+            <div class="selector-option"
+                 data-result="immediate">
+
+                🆘 I need immediate help
+
+            </div>
+
+
+            <div class="selector-option"
+                 data-result="planning">
+
+                🛡️ I want to make a safety plan
+
+            </div>
+
+
+        </div>
+
+
+        <div class="selector-result"
+             id="selectorResult">
+
+
+            <h3 id="resultTitle">
+
+                Your Next Step
+
+            </h3>
+
+
+            <p id="resultText">
+
+                Select an option above.
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EVIDENCE
+========================================== -->
+
+<section class="evidence-section"
+         id="reporting">
+
+
+    <div class="section-title">
+
+
+        <h2>
+
+            If You Decide to Report
+
+        </h2>
+
+
+        <p>
+
+            A few practical steps can help you organize information.
+
+        </p>
+
+    </div>
+
+
+    <div class="evidence-grid">
+
+
+        <div class="evidence-card">
+
+            <span>
+
+                🧾
+
+            </span>
+
+
+            <h3>
+
+                Keep Relevant Records
+
+            </h3>
+
+
+            <p>
+
+                When appropriate, preserve relevant messages,
+                screenshots, dates or other information that may
+                help explain what happened.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="evidence-card">
+
+            <span>
+
+                📝
+
+            </span>
+
+
+            <h3>
+
+                Write Down Details
+
+            </h3>
+
+
+            <p>
+
+                Record useful details while they are fresh,
+                such as when and where an incident occurred and
+                who may have been involved.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="evidence-card">
+
+            <span>
+
+                🔐
+
+            </span>
+
+
+            <h3>
+
+                Protect Your Privacy
+
+            </h3>
+
+
+            <p>
+
+                Store sensitive information carefully and share
+                it only with appropriate trusted people,
+                organizations or professionals.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     TRUSTED SUPPORT
+========================================== -->
+
+<section class="emergency-section"
+         id="trusted">
+
+
+    <div class="emergency-box">
+
+
+        <div>
+
+            <h2>
+
+                Start With Someone You Trust
+
+            </h2>
+
+
+            <p>
+
+                You do not have to make every decision immediately.
+                If you feel comfortable doing so, consider telling
+                someone you trust what is happening. They may help
+                you think through your options and connect you with
+                appropriate resources.
+
+            </p>
+
+        </div>
+
+
+        <div class="emergency-notice">
+
+            <h3>
+
+                💙 Remember
+
+            </h3>
+
+
+            <p>
+
+                You can choose how and when to seek support.
+                If someone does not respond helpfully, consider
+                reaching out to another trusted person or an
+                appropriate professional service.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     IMMEDIATE HELP
+========================================== -->
+
+<section class="emergency-section"
+         id="emergency">
+
+
+    <div class="emergency-box">
+
+
+        <div>
+
+            <h2>
+
+                🆘 If You Are in Immediate Danger
+
+            </h2>
+
+
+            <p>
+
+                Prioritize getting to a safer place when possible.
+                Contact an appropriate local emergency service,
+                security service or trusted person according to
+                your circumstances.
+
+            </p>
+
+        </div>
+
+
+        <div class="emergency-notice">
+
+            <h3>
+
+                Important
+
+            </h3>
+
+
+            <p>
+
+                HerShield is an awareness and information project.
+                It does not replace emergency services, medical
+                care, counseling or professional legal advice.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CTA
+========================================== -->
+
+<section class="support-cta">
+
+
+    <div class="support-cta-box">
+
+
+        <h2>
+
+            Your Voice Matters.
+
+        </h2>
+
+
+        <p>
+
+            Whether you need information, someone to listen,
+            reporting guidance or another form of support,
+            taking the first step can begin with learning
+            about your options.
+
+        </p>
+
+
+        <a href="legal-help-hub.html"
+           class="support-cta-button">
+
+            Explore Legal Help →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
+  <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span>Her<span>Shield</span></span>
+                </a>
+
+                <p>
+                    A digital awareness platform focused on
+                    safety, knowledge and empowerment.
+                </p>
+
+                <div class="socials">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                    <a href="#">in</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#hubs">Safety Hubs</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Safety Hubs</h4>
+
+                <a href="campus-hub.html">Campus</a>
+                <a href="workplace-hub.html">Workplace</a>
+                <a href="public-space-hub.html">Public Space</a>
+                <a href="digital-safety-hub.html">Digital Safety</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Support</h4>
+
+                <a href="support-hub.html">Get Support</a>
+                <a href="legal-help-hub.html">Legal Help</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 HerShield. Built for awareness and empowerment.
+            </p>
+
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+<!-- =========================================
+     MAIN JAVASCRIPT
+========================================== -->
+
+<script src="js/script.js"></script>
+
+
+
+<!-- =========================================
+     SUPPORT SELECTOR JAVASCRIPT
+========================================== -->
+
+<script>
+
+    const selectorOptions =
+        document.querySelectorAll(".selector-option");
+
+    const selectorResult =
+        document.getElementById("selectorResult");
+
+    const resultTitle =
+        document.getElementById("resultTitle");
+
+    const resultText =
+        document.getElementById("resultText");
+
+
+    const supportMessages = {
+
+        trusted: {
+
+            title: "Talk to Someone You Trust",
+
+            text:
+                "Consider speaking with a trusted friend, family member, teacher, counselor, colleague or another supportive person. You can share only what you feel comfortable sharing."
+
+        },
+
+
+        digital: {
+
+            title: "Digital Safety First",
+
+            text:
+                "Consider preserving relevant evidence when appropriate, reviewing privacy settings and using the platform's available blocking and reporting tools. Visit the Digital Safety Hub for more information."
+
+        },
+
+
+        report: {
+
+            title: "Organize Your Information",
+
+            text:
+                "If you decide to report, consider keeping relevant records such as messages, screenshots, dates and other details. Then check the reporting procedure for the relevant school, workplace, platform or authority."
+
+        },
+
+
+        legal: {
+
+            title: "Explore Legal Information",
+
+            text:
+                "For legal questions, consider consulting a qualified legal professional or an appropriate official authority. Visit the Legal Help Hub for general information."
+
+        },
+
+
+        immediate: {
+
+            title: "Prioritize Immediate Safety",
+
+            text:
+                "If you are in immediate danger, move toward a safer place when possible and contact an appropriate local emergency service, security service or trusted person."
+
+        },
+
+
+        planning: {
+
+            title: "Create a Safety Plan",
+
+            text:
+                "Think about trusted contacts, places where you can seek assistance, important information you may need and options that fit your personal circumstances."
+
+        }
+
+    };
+
+
+    selectorOptions.forEach(function(option) {
+
+
+        option.addEventListener("click", function() {
+
+
+            selectorOptions.forEach(
+                function(item) {
+
+                    item.classList.remove(
+                        "selected"
+                    );
+
+                }
+            );
+
+
+            option.classList.add(
+                "selected"
+            );
+
+
+            const selected =
+                option.dataset.result;
+
+
+            resultTitle.textContent =
+                supportMessages[selected].title;
+
+
+            resultText.textContent =
+                supportMessages[selected].text;
+
+
+            selectorResult.classList.add(
+                "show"
+            );
+
+
+            selectorResult.scrollIntoView({
+
+                behavior: "smooth",
+
+                block: "nearest"
+
+            });
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
+
